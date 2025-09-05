@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  web:
+    image: node:20
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=1
+      - WATCHPACK_POLLING=true
+    command: sh -c "npm install && npm run dev"

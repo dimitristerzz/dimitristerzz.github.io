@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+    paths: ['dist/**']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: source
+          fetch-depth: 0
+
+      - name: Deploy to deploy branch
+        run: |
+          cd source
+          git fetch origin deploy || true
+          git checkout deploy || git checkout -b deploy
+          git rm -rf . || true
+          cp -r out/* .
+          git config user.name "dimitristerzz"
+          git config user.email "dterzidis2008@gmail.com"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Deploying"
+          git push origin deploy --force
