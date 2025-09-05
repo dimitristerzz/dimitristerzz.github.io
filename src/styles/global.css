@@ -3,8 +3,6 @@
 @theme {
   --color-primary: hsl(145, 67%, 58%);
   --color-background: hsl(0, 0%, 0%);
-  --color-text-primary: hsl(0, 0%, 95%);
-  --color-text-secondary: hsl(0, 0%, 70%);
   --height-screen-dvh: 100svh;
 }
 
