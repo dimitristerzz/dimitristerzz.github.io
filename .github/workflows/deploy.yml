@@ -20,7 +20,7 @@ jobs:
           git fetch origin deploy || true
           git checkout deploy || git checkout -b deploy
           git rm -rf . || true
-          cp -r out/* .
+          cp -r dist/* .
           git config user.name "dimitristerzz"
           git config user.email "dterzidis2008@gmail.com"
           git add .
