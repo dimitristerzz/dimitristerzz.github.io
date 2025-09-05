@@ -1,37 +1,37 @@
-name: Deploy out to web_deploy repo
+# name: Deploy out to web_deploy repo
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout source (grooveshare_web)
-        uses: actions/checkout@v3
-        with:
-          ref: master
-          path: repo-web
+#     steps:
+#       - name: Checkout source (grooveshare_web)
+#         uses: actions/checkout@v3
+#         with:
+#           ref: master
+#           path: repo-web
 
-      - name: Clone target repo (grooveshare_web_deploy)
-        run: |
-          git clone https://x-access-token:${{ secrets.DEPLOY_REPO_PAT }}@github.com/dimitristerzz/grooveshare_web_deploy.git repo-web_deploy
-          cd repo-web_deploy
-          git checkout master || git checkout -b master
+#       - name: Clone target repo (grooveshare_web_deploy)
+#         run: |
+#           git clone https://x-access-token:${{ secrets.DEPLOY_REPO_PAT }}@github.com/dimitristerzz/grooveshare_web_deploy.git repo-web_deploy
+#           cd repo-web_deploy
+#           git checkout master || git checkout -b master
 
-      - name: Copy out folder to web_deploy
-        run: |
-          rm -rf repo-web_deploy/*
-          cp -r repo-web/out/* repo-web_deploy/
+#       - name: Copy out folder to web_deploy
+#         run: |
+#           rm -rf repo-web_deploy/*
+#           cp -r repo-web/out/* repo-web_deploy/
 
-      - name: Commit and push changes
-        run: |
-          cd repo-web_deploy
-          git config user.name "dimitristerzz"
-          git config user.email "dterzidis2008@gmail.com"
-          git add .
-          git diff-index --quiet HEAD || git commit -m "Deploy out to web_deploy repo"
-          git push origin master
+#       - name: Commit and push changes
+#         run: |
+#           cd repo-web_deploy
+#           git config user.name "dimitristerzz"
+#           git config user.email "dterzidis2008@gmail.com"
+#           git add .
+#           git diff-index --quiet HEAD || git commit -m "Deploy out to web_deploy repo"
+#           git push origin master
