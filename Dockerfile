@@ -36,4 +36,4 @@ CMD ["nginx", "-g", "daemon off;"]
 
 # Commands
 # Dev: docker compose up
-# Build: docker build -t grooveshare-web .
+# Build: docker build -t portfolio .
