@@ -17,10 +17,12 @@ jobs:
       - name: Deploy to deploy branch
         run: |
           cd source
+          mkdir -p /tmp/build
+          cp -r dist/* /tmp/build/
           git fetch origin deploy || true
           git checkout deploy || git checkout -b deploy
           git rm -rf . || true
-          cp -r dist/* .
+          cp -r /tmp/build/* .
           git config user.name "dimitristerzz"
           git config user.email "dterzidis2008@gmail.com"
           git add .
