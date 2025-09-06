@@ -7,8 +7,8 @@ docker-compose.yml
 node_modules
 npm-debug.log
 
-# Next.js build output
-.next/
-out/
+# Astro build output
+.astro/
+dist/
 
 .git
