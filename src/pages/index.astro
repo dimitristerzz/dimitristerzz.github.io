@@ -6,7 +6,7 @@ import Layout from './layout.astro';
 <Layout>
   <div class="flex flex-col items-center justify-center h-screen-dvh gap-y-12">
 
-	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
+	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10 bg-noise">
 		<div class="blob w-full h-full rounded-full bg-primary/60 filter blur-3xl animate-blob"></div>
 	</div>
 
@@ -36,7 +36,7 @@ import Layout from './layout.astro';
 
     <!-- CV Button Block -->
     <div class="animate-fade-down" style="animation-delay: 0.2s;">
-      <a href="https://dimitristerzz.github.io/portfolio/CV.pdf" download="CV.pdf" 
+      <a href="./CV.pdf" download="CV.pdf" 
          class="group flex flex-row items-center justify-center bg-text text-background px-8 py-2 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-3">
         Download my CV
         <svg width="15" height="17" viewBox="0 0 16 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
