@@ -6,9 +6,11 @@ import Layout from './layout.astro';
 <Layout>
   <div class="flex flex-col items-center justify-center h-screen-dvh gap-y-12">
 
-	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10 bg-noise">
+	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
 		<div class="blob w-full h-full rounded-full bg-primary/60 filter blur-3xl animate-blob"></div>
 	</div>
+
+	<img src="/portfolio/noise.png" alt="noise" class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20 mix-blend-multiply"/>
 
     <!-- Icon + Links Group -->
     <div class="flex flex-col items-center justify-center gap-8 animate-fade-down" style="animation-delay: 0s;">
