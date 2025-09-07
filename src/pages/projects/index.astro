@@ -4,10 +4,14 @@ import Layout from './layout.astro';
 
 ---
 <Layout>
-  <div class="flex flex-col items-center justify-start pt-22 gap-y-10 h-screen-dvh">
+  <div class="flex flex-col items-center justify-start pt-30 gap-y-10 h-screen-dvh">
+	
+	<div class="absolute top-1/6 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
+		<div class="blob w-full h-full rounded-full bg-primary/60 filter blur-3xl animate-blob"></div>
+	</div>
 
     <div class="flex flex-row items-center justify-center relative">
-
+		
       <!-- Back Arrow -->
       <a class="animate-fade-down" style="animation-delay: 0s;" href="/portfolio/">
         <img class="transition-transform duration-200 transform hover:scale-105 w-10 h-10 mr-400" 
