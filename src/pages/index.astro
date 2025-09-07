@@ -7,11 +7,14 @@ import Layout from './layout.astro';
 	<div class="flex flex-col items-center justify-center h-screen-dvh gap-y-10">
 		<img src="https://dimitristerzz.github.io/portfolio/icon.svg" alt="icon" class="w-32 h-32"/>
 		<div class="flex flex-wrap justify-center gap-6 text-xl font-regular text-text">
-			<a href="/portfolio/projects" class="text-lg text-secondary hover:underline">Projects</a>
-			<a href="/portfolio/skills" class="text-lg text-secondary hover:underline">Skills</a>
-			<a href="/portfolio/experience" class="text-lg text-secondary hover:underline">Experience</a>
-			<a href="/portfolio/about_me" class="text-lg text-secondary hover:underline">About Me</a>
-			<a href="/portfolio/contact" class="text-lg text-secondary hover:underline">Contact</a>
+			<a href="/portfolio/projects" class="text-lg text-secondary transition-transform duration-200 transform hover:scale-105">
+				<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-32 h-32"/>
+				projects
+			</a>
+			<a href="/portfolio/skills" class="text-lg text-secondary transition-transform duration-200 transform hover:scale-105">skills</a>
+			<a href="/portfolio/experience" class="text-lg text-secondary transition-transform duration-200 transform hover:scale-105">experience</a>
+			<a href="/portfolio/about_me" class="text-lg text-secondary transition-transform duration-200 transform hover:scale-105">about me</a>
+			<a href="/portfolio/contact" class="text-lg text-secondary transition-transform duration-200 transform hover:scale-105">contact</a>
 		</div>
 	</div>
 </Layout>
