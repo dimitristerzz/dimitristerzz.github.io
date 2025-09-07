@@ -4,33 +4,42 @@ import Layout from './layout.astro';
 ---
 
 <Layout>
-	<div class="flex flex-col items-center justify-center h-screen-dvh gap-y-12">
-		<div class="flex flex-col items-center justify-center gap-8">
-			<img id="icon" src="https://dimitristerzz.github.io/portfolio/icon.svg" alt="icon" class="w-20 h-20"/>
-			<div class="flex flex-wrap justify-center gap-12 text-xl font-regular text-text">
-				<a href="/portfolio/projects" class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-					<img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/>
-					projects
-				</a>
-				<a href="/portfolio/skills" class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-					<img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/>
-					skills
-				</a>
-				<a href="/portfolio/about_me" class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-					<img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/>
-					about me
-				</a>
-				<a href="/portfolio/contact" class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-					<img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/>
-					contact
-				</a>
-			</div>
-		</div>
-		<a href="https://dimitristerzz.github.io/portfolio/CV.pdf" download="CV.pdf" class="group flex flex-row items-center justify-center bg-text text-background px-8 py-2 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-3">
-			Download my CV
-			<svg width="15" height="17" viewBox="0 0 16 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-				<path d="M9 1.22192C9 0.669639 8.55228 0.221924 8 0.221924C7.44772 0.221924 7 0.669639 7 1.22192L8 1.22192L9 1.22192ZM7.29289 17.4854C7.68342 17.8759 8.31658 17.8759 8.70711 17.4854L15.0711 11.1214C15.4616 10.7309 15.4616 10.0977 15.0711 9.70721C14.6805 9.31668 14.0474 9.31668 13.6569 9.70721L8 15.3641L2.34315 9.70721C1.95262 9.31668 1.31946 9.31668 0.928932 9.70721C0.538407 10.0977 0.538407 10.7309 0.928932 11.1214L7.29289 17.4854ZM8 1.22192L7 1.22192L7 16.7783L8 16.7783L9 16.7783L9 1.22192L8 1.22192Z"/>
-			</svg>
-		</a>
-	</div>
+  <div class="flex flex-col items-center justify-center h-screen-dvh gap-y-12">
+
+    <!-- Icon + Links Group -->
+    <div class="flex flex-col items-center justify-center gap-8 animate-fade-down" style="animation-delay: 0s;">
+      
+      <!-- Icon -->
+      <img id="icon" src="https://dimitristerzz.github.io/portfolio/icon.svg" alt="icon" class="w-20 h-20"/>
+      
+      <!-- Links -->
+      <div class="flex flex-wrap justify-center gap-12 text-xl font-regular text-text">
+        <a class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center" href="/portfolio/projects">
+          <img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/> projects
+        </a>
+        <a class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center" href="/portfolio/skills">
+          <img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/> skills
+        </a>
+        <a class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center" href="/portfolio/about_me">
+          <img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/> about me
+        </a>
+        <a class="flex flex-row text-lg transition-transform duration-200 transform hover:scale-105 gap-2 items-center" href="/portfolio/contact">
+          <img src="https://dimitristerzz.github.io/portfolio/arrow_link.svg" alt="arrow"/> contact
+        </a>
+      </div>
+
+    </div>
+
+    <!-- CV Button Block -->
+    <div class="animate-fade-down" style="animation-delay: 0.2s;">
+      <a href="https://dimitristerzz.github.io/portfolio/CV.pdf" download="CV.pdf" 
+         class="group flex flex-row items-center justify-center bg-text text-background px-8 py-2 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-3">
+        Download my CV
+        <svg width="15" height="17" viewBox="0 0 16 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 1.22192C9 0.669639 8.55228 0.221924 8 0.221924C7.44772 0.221924 7 0.669639 7 1.22192L8 1.22192L9 1.22192ZM7.29289 17.4854C7.68342 17.8759 8.31658 17.8759 8.70711 17.4854L15.0711 11.1214C15.4616 10.7309 15.4616 10.0977 15.0711 9.70721C14.6805 9.31668 14.0474 9.31668 13.6569 9.70721L8 15.3641L2.34315 9.70721C1.95262 9.31668 1.31946 9.31668 0.928932 9.70721C0.538407 10.0977 0.538407 10.7309 0.928932 11.1214L7.29289 17.4854ZM8 1.22192L7 1.22192L7 16.7783L8 16.7783L9 16.7783L9 1.22192L8 1.22192Z"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
 </Layout>

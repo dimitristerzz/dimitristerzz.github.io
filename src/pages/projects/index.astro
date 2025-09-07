@@ -4,17 +4,25 @@ import Layout from './layout.astro';
 
 ---
 <Layout>
-	<div class="flex flex-col items-center justify-start pt-22 gap-y-10 h-screen-dvh">
-		<div class="flex flex-row items-center justify-center">
-			<a href="/portfolio/">
-				<img class="transition-transform duration-200 transform hover:scale-105 w-10 h-10 mr-400" src="https://dimitristerzz.github.io/portfolio/arrow_back.svg" alt="arrow_back"/>
-			</a>
-			<div class="flex flex-col absolute items-center justify-center gap-y-4">
-				<img id="icon" class="w-16 h-16" src="https://dimitristerzz.github.io/portfolio/icon.svg" alt="icon" />
-				<h1 class="text-xl font-medium text-text">
-					projects
-				</h1>
-			</div>
-		</div>
-	</div>
+  <div class="flex flex-col items-center justify-start pt-22 gap-y-10 h-screen-dvh">
+
+    <div class="flex flex-row items-center justify-center relative">
+
+      <!-- Back Arrow -->
+      <a class="animate-fade-down" style="animation-delay: 0s;" href="/portfolio/">
+        <img class="transition-transform duration-200 transform hover:scale-105 w-10 h-10 mr-400" 
+             src="https://dimitristerzz.github.io/portfolio/arrow_back.svg" alt="arrow_back"/>
+      </a>
+
+      <!-- Icon + Title -->
+      <div class="flex flex-col absolute items-center justify-center gap-y-4 animate-fade-down" style="animation-delay: 0.1s;">
+        <img id="icon" class="w-16 h-16" src="https://dimitristerzz.github.io/portfolio/icon.svg" alt="icon" />
+        <h1 class="text-xl font-medium text-text">
+          projects
+        </h1>
+      </div>
+
+    </div>
+
+  </div>
 </Layout>
