@@ -4,33 +4,37 @@ import Layout from './layout.astro';
 ---
 
 <Layout>
-	<div class="flex flex-col items-center justify-center h-screen-dvh gap-y-10">
-		<img id="icon" src="https://dimitristerzz.github.io/portfolio/icon.svg" alt="icon" class="w-32 h-32"/>
-		<div class="flex flex-wrap justify-center gap-6 text-xl font-regular text-text">
-			<a href="/portfolio/projects" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-				<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
-				projects
-			</a>
-			<a href="/portfolio/skills" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-				<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
-				skills
-			</a>
-			<a href="/portfolio/experience" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-				<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
-				experience
-			</a>
-			<a href="/portfolio/about_me" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-				<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
-				about me
-			</a>
-			<a href="/portfolio/contact" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
-				<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
-				contact
-			</a>
+	<div class="flex flex-col items-center justify-center h-screen-dvh gap-y-12">
+		<div class="flex flex-col items-center justify-center gap-6">
+			<img id="icon" src="https://dimitristerzz.github.io/portfolio/icon.svg" alt="icon" class="w-28 h-28"/>
+			<div class="flex flex-wrap justify-center gap-8 text-xl font-regular text-text">
+				<a href="/portfolio/projects" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
+					<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
+					projects
+				</a>
+				<a href="/portfolio/skills" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
+					<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
+					skills
+				</a>
+				<a href="/portfolio/experience" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
+					<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
+					experience
+				</a>
+				<a href="/portfolio/about_me" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
+					<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
+					about me
+				</a>
+				<a href="/portfolio/contact" class="flex flex-row text-lg text-secondary transition-transform duration-200 transform hover:scale-105 gap-2 items-center">
+					<img src="https://dimitristerzz.github.io/portfolio/arrow.svg" alt="arrow" class="w-3 h-3"/>
+					contact
+				</a>
+			</div>
 		</div>
-		<a href="/" class=" bg-text text-background px-20 py-5 rounded-2xl text-xl hover:bg-background hover:text-text transition cursor-pointer">
-			<img src="https://dimitristerzz.github.io/portfolio/arrow_down.svg" alt="arrow_down" class="w-32 h-32"/>
+		<a href="https://dimitristerzz.github.io/portfolio/CV.pdf" class="group flex flex-row items-center justify-center bg-text text-background px-10 py-2 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-2">
 			Download my CV
+			<svg width="14" height="16" viewBox="0 0 16 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path d="M9 1.22192C9 0.669639 8.55228 0.221924 8 0.221924C7.44772 0.221924 7 0.669639 7 1.22192L8 1.22192L9 1.22192ZM7.29289 17.4854C7.68342 17.8759 8.31658 17.8759 8.70711 17.4854L15.0711 11.1214C15.4616 10.7309 15.4616 10.0977 15.0711 9.70721C14.6805 9.31668 14.0474 9.31668 13.6569 9.70721L8 15.3641L2.34315 9.70721C1.95262 9.31668 1.31946 9.31668 0.928932 9.70721C0.538407 10.0977 0.538407 10.7309 0.928932 11.1214L7.29289 17.4854ZM8 1.22192L7 1.22192L7 16.7783L8 16.7783L9 16.7783L9 1.22192L8 1.22192Z"/>
+			</svg>
 		</a>
 	</div>
 </Layout>
