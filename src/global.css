@@ -71,3 +71,27 @@ html {
 .animate-blob {
   animation: blob 8s infinite ease-in-out;
 }
+
+
+
+.icon-arrow {
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.group:hover .icon-arrow {
+  animation: arrowDownUp 0.5s forwards;
+}
+
+@keyframes arrowDownUp {
+  0%   { transform: translateY(0); opacity: 1; }
+  49%  { transform: translateY(150%); opacity: 0; }
+  50%  { transform: translateY(-150%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes arrowUpDown {
+  0%   { transform: translateY(0); opacity: 1; }
+  49%  { transform: translateY(-150%); opacity: 0; }
+  50%  { transform: translateY(150%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
