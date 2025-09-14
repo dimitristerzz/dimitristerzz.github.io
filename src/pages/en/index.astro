@@ -5,7 +5,7 @@ import Layout from "./layout.astro";
 
 <Layout>
   <div class="flex flex-row justify-between items-center mx-80 h-screen-dvh">
-    <div class="flex flex-col items-start justify-center h gap-y-12">
+    <div class="flex flex-col items-start justify-center gap-y-12">
       <!-- Background (optional) -->
       <!--
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
@@ -136,7 +136,7 @@ import Layout from "./layout.astro";
       </div>
     </div>
 
-    <div class="animate-fade-down" style="animation-delay: 0.2s;">
+    <div class="animate-fade-down h- items-start" style="animation-delay: 0.2s;">
       <a
         href="/gr/"
         class="group flex flex-row items-center justify-center bg-text text-background px-6 py-3 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-3 overflow-hidden relative text-xl"
@@ -147,6 +147,7 @@ import Layout from "./layout.astro";
           height="16"
           viewBox="0 0 20 20"
           fill="currentColor"
+          class="arrow-language transition-transform duration-200"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
