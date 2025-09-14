@@ -1,12 +1,11 @@
 ---
 import "../../../global.css";
-import Layout from './layout.astro';
-
+import Layout from "./layout.astro";
 ---
+
 <Layout>
   <div class="flex flex-col items-start justify-start mx-80 mt-30 h-screen-dvh">
-	
-	<!-- <div class="absolute top-1/7 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
+    <!-- <div class="absolute top-1/7 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
 		<div class="blob w-full h-full rounded-full bg-primary/60 filter blur-3xl animate-blob"></div>
 	</div>
 
@@ -21,22 +20,36 @@ import Layout from './layout.astro';
         </svg>
       </a> -->
 
-      <!-- Icon + Title
+    <!-- Icon + Title
 
     </div> -->
 
     <div class="flex flex-col items-start justify-center gap-y-6">
-      <a class="animate-fade-down" style="animation-delay: 0.0s;" href="/portfolio/en/">
-          <svg class="w-26 h-auto text-white transition-colors duration-200" id="icon" width="268" height="200" viewBox="0 0 268 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 200V0H77.3968C104.504 0 125.349 10.0559 139.931 30.1676C152.644 47.8585 159 71.1359 159 100C159 133.147 150.774 158.659 134.323 176.536C119.928 192.179 100.952 200 77.3968 200H0ZM25.5185 177.374H72.91C113.291 177.374 133.481 151.583 133.481 100C133.481 48.4171 113.291 22.6257 72.91 22.6257H25.5185V177.374Z" fill="currentColor"/>
-            <path d="M202.764 22.6265V200H177.394V22.6265L83 22.6256C81.8954 22.6256 81 21.7302 81 20.6256V2.00001C81 0.895438 81.8954 4.51469e-06 83 1.00838e-05L268 0.000942832V22.6265H202.764Z" fill="currentColor"/>
-          </svg>
+      <a class="animate-fade-down" style="animation-delay: 0.0s;" href="/en/">
+        <svg
+          class="w-26 h-auto text-white transition-colors duration-200"
+          id="icon"
+          width="268"
+          height="200"
+          viewBox="0 0 268 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 200V0H77.3968C104.504 0 125.349 10.0559 139.931 30.1676C152.644 47.8585 159 71.1359 159 100C159 133.147 150.774 158.659 134.323 176.536C119.928 192.179 100.952 200 77.3968 200H0ZM25.5185 177.374H72.91C113.291 177.374 133.481 151.583 133.481 100C133.481 48.4171 113.291 22.6257 72.91 22.6257H25.5185V177.374Z"
+            fill="currentColor"></path>
+          <path
+            d="M202.764 22.6265V200H177.394V22.6265L83 22.6256C81.8954 22.6256 81 21.7302 81 20.6256V2.00001C81 0.895438 81.8954 4.51469e-06 83 1.00838e-05L268 0.000942832V22.6265H202.764Z"
+            fill="currentColor"></path>
+        </svg>
       </a>
 
-      <h1 class="text-2xl font-medium text-text animate-fade-down" style="animation-delay: 0.1s;">
-          projects
+      <h1
+        class="text-2xl font-medium text-text animate-fade-down"
+        style="animation-delay: 0.1s;"
+      >
+        projects
       </h1>
     </div>
-
   </div>
 </Layout>
