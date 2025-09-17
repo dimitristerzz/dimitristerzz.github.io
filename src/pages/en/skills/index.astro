@@ -4,25 +4,174 @@ import Layout from "./layout.astro";
 ---
 
 <Layout>
-  <div class="flex flex-col items-center justify-center gap-y-10 h-screen-dvh">
-    <a href="/en/">
-      <svg
-        id="icon"
-        class="w-18 h-18"
-        width="268"
-        height="200"
-        viewBox="0 0 268 200"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 200V0H77.3968C104.504 0 125.349 10.0559 139.931 30.1676C152.644 47.8585 159 71.1359 159 100C159 133.147 150.774 158.659 134.323 176.536C119.928 192.179 100.952 200 77.3968 200H0ZM25.5185 177.374H72.91C113.291 177.374 133.481 151.583 133.481 100C133.481 48.4171 113.291 22.6257 72.91 22.6257H25.5185V177.374Z"
-          fill="white"></path>
-        <path
-          d="M202.764 22.6265V200H177.394V22.6265L83 22.6256C81.8954 22.6256 81 21.7302 81 20.6256V2.00001C81 0.895438 81.8954 4.51469e-06 83 1.00838e-05L268 0.000942832V22.6265H202.764Z"
-          fill="white"></path>
-      </svg>
-    </a>
-    <h1 class="text-4xl font-medium text-text">UNDER CONSTRUCTION</h1>
+  <div class="flex flex-col items-start justify-start px-80 py-40 h-screen-dvh">
+    <!-- <div class="absolute top-1/7 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
+		<div class="blob w-full h-full rounded-full bg-primary/60 filter blur-3xl animate-blob"></div>
+	</div>
+
+	<img src="/portfolio/noise.png" alt="noise" class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10 mix-blend-multiply"/> -->
+
+    <!-- <div class="flex items-center justify-center">
+		
+      Back Arrow
+      <a class="animate-fade-down" style="animation-delay: 0s;" href="/portfolio/">
+        <svg class="transition-transform duration-200 transform hover:scale-105 w-8 h-8 mr-400 text-white hover:text-primary" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 17C31.1046 17 32 16.1046 32 15C32 13.8954 31.1046 13 30 13V15V17ZM0.585786 13.5858C-0.195262 14.3668 -0.195262 15.6332 0.585786 16.4142L13.3137 29.1421C14.0948 29.9232 15.3611 29.9232 16.1421 29.1421C16.9232 28.3611 16.9232 27.0948 16.1421 26.3137L4.82843 15L16.1421 3.68629C16.9232 2.90524 16.9232 1.63891 16.1421 0.857864C15.3611 0.0768158 14.0948 0.0768158 13.3137 0.857864L0.585786 13.5858ZM30 15V13L2 13V15V17L30 17V15Z" fill="currentColor"/>
+        </svg>
+      </a> -->
+
+    <!-- Icon + Title
+
+    </div> -->
+
+    <div class="flex flex-col items-start justify-center gap-y-20">
+      <div class="flex flex-col gap-y-6">
+        <a class="animate-fade-down" style="animation-delay: 0.0s;" href="/en/">
+          <svg
+            class="w-40 h-auto text-white transition-colors duration-200"
+            id="icon"
+            width="268"
+            height="200"
+            viewBox="0 0 268 200"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 200V0H77.3968C104.504 0 125.349 10.0559 139.931 30.1676C152.644 47.8585 159 71.1359 159 100C159 133.147 150.774 158.659 134.323 176.536C119.928 192.179 100.952 200 77.3968 200H0ZM25.5185 177.374H72.91C113.291 177.374 133.481 151.583 133.481 100C133.481 48.4171 113.291 22.6257 72.91 22.6257H25.5185V177.374Z"
+              fill="currentColor"></path>
+            <path
+              d="M202.764 22.6265V200H177.394V22.6265L83 22.6256C81.8954 22.6256 81 21.7302 81 20.6256V2.00001C81 0.895438 81.8954 4.51469e-06 83 1.00838e-05L268 0.000942832V22.6265H202.764Z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+
+        <h1
+          class="text-2xl font-medium text-text animate-fade-down"
+          style="animation-delay: 0.1s;"
+        >
+          skills
+        </h1>
+      </div>
+
+      <div class="flex flex-col gap-y-6">
+        <a
+          class="flex flex-row items-center gap-2 text-lg text-text animate-fade-down"
+          style="animation-delay: 0.0s;"
+          target="_blank"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 4C8.8 4 6.8 5.65926 6 8.97778C7.2 7.31852 8.6 6.6963 10.2 7.11111C11.1129 7.34756 11.7653 8.03477 12.4876 8.7948C13.664 10.0333 15.0258 11.4667 18 11.4667C21.2 11.4667 23.2 9.80741 24 6.48889C22.8 8.14815 21.4 8.77037 19.8 8.35556C18.8871 8.11911 18.2347 7.4319 17.5124 6.67187C16.336 5.43342 14.9742 4 12 4ZM6 12.5333C2.8 12.5333 0.8 14.1926 0 17.5111C1.2 15.8519 2.6 15.2296 4.2 15.6444C5.11289 15.8814 5.76533 16.5681 6.48756 17.3281C7.664 18.5666 9.02578 20 12 20C15.2 20 17.2 18.3407 18 15.0222C16.8 16.6815 15.4 17.3037 13.8 16.8889C12.8871 16.6524 12.2347 15.9652 11.5124 15.2052C10.336 13.9667 8.97422 12.5333 6 12.5333Z"
+              fill="white"></path>
+          </svg>
+          Tailwind CSS
+        </a>
+        <a
+          class="flex flex-row items-center gap-2 text-lg text-text animate-fade-down"
+          style="animation-delay: 0.0s;"
+          target="_blank"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M24 24H0V0H24L12 12L24 24Z" fill="white"></path>
+          </svg>
+          Kotlin
+        </a>
+        <a
+          class="flex flex-row items-center gap-2 text-lg text-text animate-fade-down"
+          style="animation-delay: 0.0s;"
+          target="_blank"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.17977 20.4418C8.09708 19.4507 7.78099 17.3683 8.23209 15.8596C9.01424 16.8108 10.098 17.1121 11.2205 17.2822C12.9535 17.5447 14.6554 17.4465 16.2652 16.6533C16.4494 16.5625 16.6196 16.4417 16.8208 16.3194C16.9719 16.7583 17.0112 17.2013 16.9584 17.6523C16.8301 18.7505 16.2844 19.5988 15.4163 20.2418C15.0692 20.4991 14.7019 20.729 14.3435 20.9715C13.2421 21.7169 12.9442 22.591 13.358 23.8623C13.3678 23.8935 13.3766 23.9244 13.3989 24C12.8366 23.7479 12.4258 23.3809 12.1128 22.8985C11.7823 22.3894 11.625 21.8261 11.6168 21.2167C11.6126 20.9201 11.6126 20.6208 11.5728 20.3284C11.4756 19.6156 11.1414 19.2964 10.5118 19.278C9.86572 19.2591 9.35463 19.6591 9.2191 20.2891C9.20875 20.3374 9.19374 20.3851 9.17874 20.4413L9.17977 20.4418Z"
+              fill="white"></path>
+            <path
+              d="M3 15.6082C3 15.6082 6.20607 14.0442 9.42111 14.0442L11.8451 6.53166C11.9359 6.16837 12.2008 5.92146 12.5 5.92146C12.7992 5.92146 13.0641 6.16837 13.1549 6.53166L15.5789 14.0442C19.3866 14.0442 22 15.6082 22 15.6082C22 15.6082 16.5542 0.751923 16.5436 0.722116C16.3873 0.282885 16.1234 0 15.7677 0H9.23287C8.87714 0 8.62393 0.282885 8.45699 0.722116C8.44521 0.751362 3 15.6082 3 15.6082Z"
+              fill="white"></path>
+          </svg>
+          Astro
+        </a>
+      </div>
+
+      <div class="animate-fade-down" style="animation-delay: 0.2s;">
+        <a
+          href="/gr/skills/"
+          class="group flex flex-row items-center justify-center bg-text text-background px-6 py-3 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-4 overflow-hidden relative text-xl"
+        >
+          <div class="flex flex-row gap-2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="w-6 h-auto"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="11.25"
+                stroke="currentColor"
+                stroke-width="1.5"></circle>
+              <path
+                d="M12 0.75C13.2197 0.75 14.5263 1.75874 15.5723 3.85059C16.5956 5.89754 17.25 8.77776 17.25 12C17.25 15.2222 16.5956 18.1025 15.5723 20.1494C14.5263 22.2413 13.2197 23.25 12 23.25C10.7803 23.25 9.47366 22.2413 8.42773 20.1494C7.4044 18.1025 6.75 15.2222 6.75 12C6.75 8.77776 7.4044 5.89754 8.42773 3.85059C9.47366 1.75874 10.7803 0.75 12 0.75Z"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+              <path
+                d="M20.1485 3.80933C18.0086 5.7897 15.1457 7.00004 12 7.00004C8.85443 7.00004 5.9915 5.7897 3.85156 3.80933"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+              <path
+                d="M20.1144 20.1595C17.9782 18.1976 15.1289 17 11.9998 17C8.8708 17 6.02149 18.1976 3.88525 20.1595"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+              <path d="M23 12L1 12" stroke="currentColor" stroke-width="1.5"
+              ></path>
+            </svg>
+            ΕΛ
+          </div>
+
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="arrow-language transition-transform duration-200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_100_159)">
+              <path
+                d="M0.390687 13.7239C-0.130012 14.2446 -0.130012 15.0889 0.390687 15.6096C0.911386 16.1303 1.75561 16.1303 2.27631 15.6096L1.3335 14.6667L0.390687 13.7239ZM16.0002 1.33341C16.0002 0.597034 15.4032 8.06958e-05 14.6668 8.06958e-05L2.66683 8.06958e-05C1.93045 8.06958e-05 1.3335 0.597034 1.3335 1.33341C1.3335 2.06979 1.93045 2.66675 2.66683 2.66675H13.3335V13.3334C13.3335 14.0698 13.9305 14.6667 14.6668 14.6667C15.4032 14.6667 16.0002 14.0698 16.0002 13.3334V1.33341ZM1.3335 14.6667L2.27631 15.6096L15.6096 2.27622L14.6668 1.33341L13.724 0.390605L0.390687 13.7239L1.3335 14.6667Z"
+                fill="currentColor"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_100_159">
+                <rect width="16" height="16" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </Layout>
