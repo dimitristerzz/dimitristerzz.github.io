@@ -1,10 +1,10 @@
 ---
 import "../../global.css";
 import Layout from "./layout.astro";
-import LinkArrow from "../../icons/linkArrow.astro";
-import Icon from "../../icons/icon.astro";
+import Icon from "../../components/assets/icon.astro";
 import CVDownloadButton from "../../components/cvDownloadButton.astro";
-import LangSwitchGr from "../../components/langSwitchGr.astro";
+import LinksRow from "../../components/layouts/linksRow.astro";
+import LangSwitch from "../../components/langSwitch.astro";
 ---
 
 <Layout>
@@ -16,43 +16,12 @@ import LangSwitchGr from "../../components/langSwitchGr.astro";
       >
         <Icon class="w-50 h-auto" />
 
-        <div
-          class="flex flex-wrap justify-center gap-12 text-xl font-regular text-text"
-        >
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/gr/skills/"
-          >
-            <LinkArrow />
-            δεξιότητες
-          </a>
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/gr/projects/"
-          >
-            <LinkArrow />
-            πρότζεκτς
-          </a>
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/gr/about_me/"
-          >
-            <LinkArrow />
-            σχετικά με μένα
-          </a>
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/gr/contact/"
-          >
-            <LinkArrow />
-            επικοινωνία
-          </a>
-        </div>
+        <LinksRow lang="gr"/>
       </div>
 
       <CVDownloadButton text="Κατεβάστε το βιογραφικό μου" href="/CV_ΕΛ.pdf" download="CV_ΕΛ.pdf" />
     </div>
 
-    <LangSwitchGr href="/en/" />
+    <LangSwitch lang="gr" href="/en/" />
   </div>
 </Layout>

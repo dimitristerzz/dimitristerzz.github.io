@@ -1,0 +1,51 @@
+---
+import Arrow from "../assets/arrow.astro";
+
+const { lang } = Astro.props;
+
+const translations = {
+  gr: {
+    skills: "δεξιότητες",
+    projects: "πρότζεκτς",
+    about: "σχετικά με μένα",
+    contact: "επικοινωνία",
+  },
+  en: {
+    skills: "skills",
+    projects: "projects",
+    about: "about me",
+    contact: "contact",
+  },
+};
+---
+
+<div class="flex flex-wrap justify-center gap-12 text-xl font-regular text-text">
+  <a
+    class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
+    href={`/${lang}/skills/`}
+  >
+    <Arrow />
+    {translations[lang].skills}
+  </a>
+  <a
+    class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
+    href={`/${lang}/projects/`}
+  >
+    <Arrow />
+    {translations[lang].projects}
+  </a>
+  <a
+    class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
+    href={`/${lang}/about_me/`}
+  >
+    <Arrow />
+    {translations[lang].about}
+  </a>
+  <a
+    class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
+    href={`/${lang}/contact/`}
+  >
+    <Arrow />
+    {translations[lang].contact}
+  </a>
+</div>

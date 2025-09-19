@@ -1,10 +1,10 @@
 ---
 import "../../global.css";
 import Layout from "./layout.astro";
-import LinkArrow from "../../icons/linkArrow.astro";
-import Icon from "../../icons/icon.astro";
+import Icon from "../../components/assets/icon.astro";
 import CVDownloadButton from "../../components/cvDownloadButton.astro";
-import LangSwitchEn from "../../components/langSwitchEn.astro";
+import LangSwitch from "../../components/langSwitch.astro";
+import LinksRow from "../../components/layouts/linksRow.astro";
 ---
 
 <Layout>
@@ -16,43 +16,16 @@ import LangSwitchEn from "../../components/langSwitchEn.astro";
       >
         <Icon class="w-50 h-auto" />
 
-        <div
-          class="flex flex-wrap justify-center gap-12 text-xl font-regular text-text"
-        >
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/en/skills/"
-          >
-            <LinkArrow />
-            skills
-          </a>
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/en/projects/"
-          >
-            <LinkArrow />
-            projects
-          </a>
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/en/about_me/"
-          >
-            <LinkArrow />
-            about me
-          </a>
-          <a
-            class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
-            href="/en/contact/"
-          >
-            <LinkArrow />
-            contact
-          </a>
-        </div>
+        <LinksRow lang="en" />
       </div>
 
-      <CVDownloadButton text="Download my CV" href="/CV_EN.pdf" download="CV_EN.pdf" />
+      <CVDownloadButton
+        text="Download my CV"
+        href="/CV_EN.pdf"
+        download="CV_EN.pdf"
+      />
     </div>
 
-    <LangSwitchEn href="/gr/" />
+    <LangSwitch lang="en" href="/gr/" />
   </div>
 </Layout>
