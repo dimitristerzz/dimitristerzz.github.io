@@ -1,43 +1,21 @@
 ---
 import "../../global.css";
 import Layout from "./layout.astro";
+import LinkArrow from "../../icons/linkArrow.astro";
+import Icon from "../../icons/icon.astro";
+import CVDownloadButton from "../../components/cvDownloadButton.astro";
+import LangSwitchGr from "../../components/langSwitchGr.astro";
 ---
 
 <Layout>
   <div class="flex flex-row justify-between items-center px-80 h-screen-dvh">
     <div class="flex flex-col items-start justify-center h gap-y-12">
-      <!-- Background (optional) -->
-      <!--
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 -z-10">
-        <div class="blob w-full h-full rounded-full bg-primary/50 filter blur-3xl animate-blob"></div>
-      </div>
-      <img src="/portfolio/noise.png" alt="noise" class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10 mix-blend-multiply"/>
-      -->
-
-      <!-- Icon + Links Group -->
       <div
         class="flex flex-col items-start justify-center gap-8 animate-fade-down text-center"
         style="animation-delay: 0s;"
       >
-        <!-- Icon -->
-        <svg
-          id="icon"
-          class="w-50 h-auto"
-          width="268"
-          height="200"
-          viewBox="0 0 268 200"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 200V0H77.3968C104.504 0 125.349 10.0559 139.931 30.1676C152.644 47.8585 159 71.1359 159 100C159 133.147 150.774 158.659 134.323 176.536C119.928 192.179 100.952 200 77.3968 200H0ZM25.5185 177.374H72.91C113.291 177.374 133.481 151.583 133.481 100C133.481 48.4171 113.291 22.6257 72.91 22.6257H25.5185V177.374Z"
-            fill="white"></path>
-          <path
-            d="M202.764 22.6265V200H177.394V22.6265L83 22.6256C81.8954 22.6256 81 21.7302 81 20.6256V2.00001C81 0.895438 81.8954 4.51469e-06 83 1.00838e-05L268 0.000942832V22.6265H202.764Z"
-            fill="white"></path>
-        </svg>
+        <Icon class="w-50 h-auto" />
 
-        <!-- Links -->
         <div
           class="flex flex-wrap justify-center gap-12 text-xl font-regular text-text"
         >
@@ -45,205 +23,36 @@ import Layout from "./layout.astro";
             class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
             href="/gr/skills/"
           >
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_99_158)">
-                <path
-                  d="M0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683418 12.0976 1.31658 12.0976 1.70711 11.7071L1 11L0.292893 10.2929ZM12 0.999999C12 0.447715 11.5523 -4.83537e-07 11 -4.83537e-07H2C1.44772 -4.83537e-07 1 0.447715 1 0.999999C1 1.55228 1.44772 2 2 2H10V10C10 10.5523 10.4477 11 11 11C11.5523 11 12 10.5523 12 10V0.999999ZM1 11L1.70711 11.7071L11.7071 1.70711L11 0.999999L10.2929 0.292893L0.292893 10.2929L1 11Z"
-                  fill="white"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_99_158">
-                  <rect width="12" height="12" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
+            <LinkArrow />
             δεξιότητες
           </a>
           <a
             class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
             href="/gr/projects/"
           >
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_99_158)">
-                <path
-                  d="M0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683418 12.0976 1.31658 12.0976 1.70711 11.7071L1 11L0.292893 10.2929ZM12 0.999999C12 0.447715 11.5523 -4.83537e-07 11 -4.83537e-07H2C1.44772 -4.83537e-07 1 0.447715 1 0.999999C1 1.55228 1.44772 2 2 2H10V10C10 10.5523 10.4477 11 11 11C11.5523 11 12 10.5523 12 10V0.999999ZM1 11L1.70711 11.7071L11.7071 1.70711L11 0.999999L10.2929 0.292893L0.292893 10.2929L1 11Z"
-                  fill="white"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_99_158">
-                  <rect width="12" height="12" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
+            <LinkArrow />
             πρότζεκτς
           </a>
           <a
             class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
             href="/gr/about_me/"
           >
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_99_158)">
-                <path
-                  d="M0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683418 12.0976 1.31658 12.0976 1.70711 11.7071L1 11L0.292893 10.2929ZM12 0.999999C12 0.447715 11.5523 -4.83537e-07 11 -4.83537e-07H2C1.44772 -4.83537e-07 1 0.447715 1 0.999999C1 1.55228 1.44772 2 2 2H10V10C10 10.5523 10.4477 11 11 11C11.5523 11 12 10.5523 12 10V0.999999ZM1 11L1.70711 11.7071L11.7071 1.70711L11 0.999999L10.2929 0.292893L0.292893 10.2929L1 11Z"
-                  fill="white"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_99_158">
-                  <rect width="12" height="12" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
+            <LinkArrow />
             σχετικά με μένα
           </a>
           <a
             class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
             href="/gr/contact/"
           >
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_99_158)">
-                <path
-                  d="M0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683418 12.0976 1.31658 12.0976 1.70711 11.7071L1 11L0.292893 10.2929ZM12 0.999999C12 0.447715 11.5523 -4.83537e-07 11 -4.83537e-07H2C1.44772 -4.83537e-07 1 0.447715 1 0.999999C1 1.55228 1.44772 2 2 2H10V10C10 10.5523 10.4477 11 11 11C11.5523 11 12 10.5523 12 10V0.999999ZM1 11L1.70711 11.7071L11.7071 1.70711L11 0.999999L10.2929 0.292893L0.292893 10.2929L1 11Z"
-                  fill="white"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_99_158">
-                  <rect width="12" height="12" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
+            <LinkArrow />
             επικοινωνία
           </a>
         </div>
       </div>
 
-      <!-- CV Button Block -->
-      <div class="animate-fade-down" style="animation-delay: 0.2s;">
-        <a
-          href="/CV_ΕΛ.pdf"
-          download="CV_ΕΛ.pdf"
-          class="group flex flex-row items-center justify-center bg-text text-background px-14 py-3 rounded-2xl hover:bg-background hover:text-text transition cursor-pointer gap-4 overflow-hidden relative text-xl"
-        >
-          Κατεβάστε το βιογραφικό μου
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            class="icon-arrow"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_100_170)">
-              <path
-                d="M11.33 1.875C11.33 1.14048 10.7345 0.545035 10 0.545035C9.26548 0.545035 8.67003 1.14048 8.67003 1.875L10 1.875L11.33 1.875ZM9.05957 19.0654C9.57896 19.5848 10.421 19.5848 10.9404 19.0654L19.4043 10.6016C19.9237 10.0822 19.9237 9.24011 19.4043 8.72073C18.8849 8.20134 18.0428 8.20134 17.5234 8.72073L10 16.2441L2.47658 8.72073C1.9572 8.20134 1.11511 8.20134 0.595727 8.72073C0.0763429 9.24011 0.0763429 10.0822 0.595727 10.6016L9.05957 19.0654ZM10 1.875L8.67003 1.875L8.67004 18.125L10 18.125L11.33 18.125L11.33 1.875L10 1.875Z"
-                fill="currentColor"></path>
-            </g>
-            <defs>
-              <clipPath id="clip0_100_170">
-                <rect width="20" height="20" fill="currentColor"></rect>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-      </div>
+      <CVDownloadButton text="Κατεβάστε το βιογραφικό μου" href="/CV_ΕΛ.pdf" download="CV_ΕΛ.pdf" />
     </div>
 
-    <div class="animate-fade-down" style="animation-delay: 0.2s;">
-      <a
-        href="/en/"
-        class="group flex flex-row items-center justify-center bg-text text-background px-6 py-3 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-4 overflow-hidden relative text-xl"
-      >
-        <div class="flex flex-row gap-2">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            class="w-6 h-auto"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="12"
-              cy="12"
-              r="11.25"
-              stroke="currentColor"
-              stroke-width="1.5"></circle>
-            <path
-              d="M12 0.75C13.2197 0.75 14.5263 1.75874 15.5723 3.85059C16.5956 5.89754 17.25 8.77776 17.25 12C17.25 15.2222 16.5956 18.1025 15.5723 20.1494C14.5263 22.2413 13.2197 23.25 12 23.25C10.7803 23.25 9.47366 22.2413 8.42773 20.1494C7.4044 18.1025 6.75 15.2222 6.75 12C6.75 8.77776 7.4044 5.89754 8.42773 3.85059C9.47366 1.75874 10.7803 0.75 12 0.75Z"
-              stroke="currentColor"
-              stroke-width="1.5"></path>
-            <path
-              d="M20.1485 3.80933C18.0086 5.7897 15.1457 7.00004 12 7.00004C8.85443 7.00004 5.9915 5.7897 3.85156 3.80933"
-              stroke="currentColor"
-              stroke-width="1.5"></path>
-            <path
-              d="M20.1144 20.1595C17.9782 18.1976 15.1289 17 11.9998 17C8.8708 17 6.02149 18.1976 3.88525 20.1595"
-              stroke="currentColor"
-              stroke-width="1.5"></path>
-            <path d="M23 12L1 12" stroke="currentColor" stroke-width="1.5"
-            ></path>
-          </svg>
-          EN
-        </div>
-
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="currentColor"
-          class="arrow-language transition-transform duration-200"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_100_159)">
-            <path
-              d="M0.390687 13.7239C-0.130012 14.2446 -0.130012 15.0889 0.390687 15.6096C0.911386 16.1303 1.75561 16.1303 2.27631 15.6096L1.3335 14.6667L0.390687 13.7239ZM16.0002 1.33341C16.0002 0.597034 15.4032 8.06958e-05 14.6668 8.06958e-05L2.66683 8.06958e-05C1.93045 8.06958e-05 1.3335 0.597034 1.3335 1.33341C1.3335 2.06979 1.93045 2.66675 2.66683 2.66675H13.3335V13.3334C13.3335 14.0698 13.9305 14.6667 14.6668 14.6667C15.4032 14.6667 16.0002 14.0698 16.0002 13.3334V1.33341ZM1.3335 14.6667L2.27631 15.6096L15.6096 2.27622L14.6668 1.33341L13.724 0.390605L0.390687 13.7239L1.3335 14.6667Z"
-              fill="currentColor"></path>
-          </g>
-          <defs>
-            <clipPath id="clip0_100_159">
-              <rect width="16" height="16" fill="white"></rect>
-            </clipPath>
-          </defs>
-        </svg>
-      </a>
-    </div>
-
-    <script>
-      const arrow = document.querySelector(".icon-arrow") as HTMLElement | null;
-      const link = document.querySelector(".group") as HTMLElement | null;
-
-      if (link && arrow) {
-        link.addEventListener("mouseenter", () => {
-          arrow.style.animation = "arrowDownUp 0.5s forwards";
-        });
-
-        link.addEventListener("mouseleave", () => {
-          arrow.style.animation = "arrowUpDown 0.5s forwards";
-        });
-      }
-    </script>
+    <LangSwitchGr href="/en/" />
   </div>
 </Layout>

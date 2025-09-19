@@ -1,0 +1,30 @@
+---
+import DownloadArrow from "../icons/downloadArrow.astro";
+const { href, download, text } = Astro.props;
+---
+
+<div class="animate-fade-down" style="animation-delay: 0.2s;">
+  <a
+    href={href}
+    download={download}
+    class="group flex flex-row items-center justify-center bg-text text-background px-14 py-3 rounded-2xl hover:bg-background hover:text-text transition cursor-pointer gap-4 overflow-hidden relative text-xl"
+  >
+    {text}
+    <DownloadArrow class="icon-arrow" />
+  </a>
+</div>
+
+<script>
+  const arrow = document.querySelector(".icon-arrow") as HTMLElement | null;
+  const link = document.querySelector(".group") as HTMLElement | null;
+
+  if (link && arrow) {
+    link.addEventListener("mouseenter", () => {
+      arrow.style.animation = "arrowDownUp 0.5s forwards";
+    });
+
+    link.addEventListener("mouseleave", () => {
+      arrow.style.animation = "arrowUpDown 0.5s forwards";
+    });
+  }
+</script>
