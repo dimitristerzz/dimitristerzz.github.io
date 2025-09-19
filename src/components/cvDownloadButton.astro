@@ -1,5 +1,10 @@
 ---
-const { href, download, text } = Astro.props;
+const { href, download, lang } = Astro.props;
+
+const labels = {
+  en: "Download my CV",
+  gr: "Κατεβάστε το Βιογραφικό μου",
+};
 ---
 
 <div class="animate-fade-down" style="animation-delay: 0.2s;">
@@ -8,7 +13,7 @@ const { href, download, text } = Astro.props;
     download={download}
     class="group flex flex-row items-center justify-center bg-text text-background px-14 py-3 rounded-2xl hover:bg-background hover:text-text transition cursor-pointer gap-4 overflow-hidden relative text-xl"
   >
-    {text}
+    {labels[lang]}
     <svg
       width="20"
       height="20"
