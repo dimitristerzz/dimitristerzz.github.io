@@ -28,14 +28,6 @@ html {
   display: none;
 }
 
-.select-text * {
-  -webkit-user-drag: auto !important;
-  -khtml-user-drag: auto !important;
-  -moz-user-drag: auto !important;
-  -o-user-drag: auto !important;
-  user-select: text !important;
-}
-
 @keyframes fadeDown {
   0% {
     opacity: 0;
