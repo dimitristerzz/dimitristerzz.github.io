@@ -1,14 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-background: hsl(0, 0%, 0%);
   --color-text: hsl(0, 0%, 100%);
   --height-screen-dvh: 100svh;
-}
-
-@view-transition {
-  navigation: auto;
 }
 
 html {
@@ -28,6 +23,10 @@ html {
   display: none;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 @keyframes fadeDown {
   0% {
     opacity: 0;
@@ -42,14 +41,6 @@ html {
 .animate-fade-down {
   opacity: 0;
   animation: fadeDown 0.6s ease forwards;
-}
-
-.icon-arrow {
-  transition: transform 0.4s, opacity 0.4s;
-}
-
-.group:hover .icon-arrow {
-  animation: arrowDownUp 0.5s forwards;
 }
 
 @keyframes arrowDownUp {
@@ -90,6 +81,10 @@ html {
   }
 }
 
-.group:hover .arrow-language {
-  transform: scale(0.6);
+.group:hover .icon-arrow {
+  animation: arrowDownUp 0.5s forwards;
+}
+
+.group:not(:hover) .icon-arrow.has-hovered {
+  animation: arrowUpDown 0.5s forwards;
 }

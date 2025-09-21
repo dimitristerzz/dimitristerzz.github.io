@@ -34,19 +34,12 @@ const labels = {
       </defs>
     </svg>
   </a>
+
+  <script>
+    document.querySelectorAll(".group").forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        link.querySelector(".icon-arrow")?.classList.add("has-hovered");
+      });
+    });
+  </script>
 </div>
-
-<script>
-  const arrow = document.querySelector(".icon-arrow") as HTMLElement | null;
-  const link = document.querySelector(".group") as HTMLElement | null;
-
-  if (link && arrow) {
-    link.addEventListener("mouseenter", () => {
-      arrow.style.animation = "arrowDownUp 0.5s forwards";
-    });
-
-    link.addEventListener("mouseleave", () => {
-      arrow.style.animation = "arrowUpDown 0.5s forwards";
-    });
-  }
-</script>
