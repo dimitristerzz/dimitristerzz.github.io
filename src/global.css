@@ -4,7 +4,6 @@
   --color-background: hsl(0, 0%, 0%);
   --color-text: hsl(0, 0%, 100%);
   --height-screen-dvh: 100svh;
-  --width-screen-dvw: 100svw;
 }
 
 html {
@@ -63,29 +62,6 @@ html {
   }
 }
 
-@keyframes arrowUpDown {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  49% {
-    transform: translateY(-150%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(150%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .group:hover .icon-arrow {
   animation: arrowDownUp 0.5s forwards;
-}
-
-.group:not(:hover) .icon-arrow.has-hovered {
-  animation: arrowUpDown 0.5s forwards;
 }
