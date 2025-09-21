@@ -8,20 +8,20 @@ import LangSwitch from "../../components/langSwitch.astro";
 ---
 
 <Layout lang="el" description="Full-Stack Software Engineer από την Ελλάδα">
-  <div class="flex flex-row justify-between items-center px-80 h-screen-dvh">
-    <div class="flex flex-col items-start justify-center gap-y-12">
+  <div class="flex flex-row justify-between items-center mx-80 h-screen-dvh">
+    <div class="flex flex-col items-start justify-center gap-12">
       <div
         class="flex flex-col items-start justify-center gap-8 animate-fade-down text-center"
         style="animation-delay: 0s;"
       >
         <Icon class="w-50 h-auto" />
 
-        <LinksRow lang="gr" />
+        <LinksRow lang="el" />
       </div>
 
-      <CVDownloadButton lang="gr" href="/CV_ΕΛ.pdf" download="CV_ΕΛ.pdf" />
+      <CVDownloadButton lang="el" href="/CV_ΕΛ.pdf" download="CV_ΕΛ.pdf" />
     </div>
 
-    <LangSwitch lang="gr" href="/en/" />
+    <LangSwitch lang="el"/>
   </div>
 </Layout>

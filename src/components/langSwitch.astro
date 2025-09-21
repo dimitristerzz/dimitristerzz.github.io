@@ -3,13 +3,16 @@ const { href, lang } = Astro.props;
 
 const labels = {
   en: "ΕΛ",
-  gr: "EN",
+  el: "EN",
 };
+
+const otherLang = lang === "el" ? "en" : "el";
+const destinationHref = href ? `/${otherLang}/${href}/` : `/${otherLang}/`;
 ---
 
 <div class="animate-fade-down" style="animation-delay: 0.2s;">
   <a
-    href={href}
+    href={destinationHref}
     class="group flex flex-row items-center justify-center bg-text text-background px-6 py-3 rounded-4xl hover:bg-background hover:text-text transition cursor-pointer gap-4 overflow-hidden relative text-xl"
   >
     <div class="flex flex-row gap-2">
