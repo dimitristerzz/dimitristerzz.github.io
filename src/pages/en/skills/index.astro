@@ -1,12 +1,15 @@
 ---
 import "../../../global.css";
-import Layout from "./layout.astro";
+import Layout from "../../../components/layout.astro";
 import Icon from "../../../components/assets/icon.astro";
 import SkillsCol from "../../../components/layouts/skillsCol.astro";
 import LangSwitch from "../../../components/langSwitch.astro";
 ---
 
-<Layout>
+<Layout
+  lang="en"
+  description="Overview of my technical skills in software engineering, programming, and modern frameworks"
+>
   <div class="flex flex-col items-start justify-start px-80 py-40 h-screen-dvh">
     <div class="flex flex-col items-start justify-center gap-y-20">
       <div class="flex flex-col gap-y-6">

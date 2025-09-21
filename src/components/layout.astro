@@ -1,5 +1,9 @@
+---
+const { lang, description } = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,12 +12,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap"
+      as="style"
+    />
 
     <title>Dimitris Terzidis</title>
-    <meta
-      name="description"
-      content="Learn more about me, my background, and my journey as a software engineer"
-    />
+    <meta name="description" content={description} />
     <meta
       property="og:image"
       content="https://dimitristerzz.github.io/logo.png"

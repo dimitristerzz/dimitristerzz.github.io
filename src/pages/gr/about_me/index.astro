@@ -1,12 +1,15 @@
 ---
 import "../../../global.css";
-import Layout from "./layout.astro";
+import Layout from "../../../components/layout.astro";
 import Icon from "../../../components/assets/icon.astro";
 import AboutMeCol from "../../../components/layouts/aboutMeCol.astro";
 import LangSwitch from "../../../components/langSwitch.astro";
 ---
 
-<Layout>
+<Layout
+  lang="gr"
+  description="Μάθετε περισσότερα για μένα, το παρελθόν μου, και την πορεία μου ως software engineer"
+>
   <div class="flex flex-col items-start justify-start px-80 py-40 h-screen-dvh">
     <div class="flex flex-col items-start justify-center gap-y-20">
       <div class="flex flex-col gap-y-6">
