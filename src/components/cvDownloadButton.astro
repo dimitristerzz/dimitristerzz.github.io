@@ -1,16 +1,21 @@
 ---
-const { href, download, lang } = Astro.props;
+const { lang } = Astro.props;
 
 const labels = {
   en: "Download my CV",
   el: "Κατεβάστε το Βιογραφικό μου",
 };
+
+const files = {
+  en: { href: "/CV_EN.pdf", download: "CV_EN.pdf" },
+  el: { href: "/CV_ΕΛ.pdf", download: "CV_ΕΛ.pdf" },
+};
 ---
 
 <div class="animate-fade-down" style="animation-delay: 0.2s;">
   <a
-    href={href}
-    download={download}
+    href={files[lang].href}
+    download={files[lang].download}
     class="group flex flex-row items-center justify-center bg-text text-background px-14 py-3 rounded-2xl hover:bg-background hover:text-text transition cursor-pointer gap-4 overflow-hidden relative text-xl"
   >
     {labels[lang]}
