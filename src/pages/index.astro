@@ -1,8 +1,10 @@
 ---
-import "../global.css";
 import Layout from "../components/layout.astro";
+
+import { redirect } from 'astro:redirect';
+
+throw redirect('/en/', 308);
 ---
 
 <Layout lang="en" description="Full-Stack Software Engineer from Greece">
-  <meta http-equiv="refresh" content="0; url=/en/" />
 </Layout>
