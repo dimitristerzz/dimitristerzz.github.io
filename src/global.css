@@ -4,6 +4,7 @@
   --color-background: hsl(0, 0%, 0%);
   --color-text: hsl(0, 0%, 100%);
   --height-screen-dvh: 100svh;
+  --width-screen-dvw: 100svw;
 }
 
 html {
