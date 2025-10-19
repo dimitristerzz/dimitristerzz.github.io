@@ -1,0 +1,16 @@
+---
+import Layout from "../../components/layout.astro";
+import ScreenLayout from "../../components/layouts/screenCol.astro";
+import AboutMeCol from "../../components/layouts/aboutMeCol.astro";
+import LangSwitch from "../../components/langSwitch.astro";
+---
+
+<Layout
+  lang="en"
+  description="Learn more about me, my background, and my journey as a software engineer"
+>
+  <ScreenLayout lang="en" title="about_me">
+    <AboutMeCol lang="en" />
+    <LangSwitch lang="en" href="about_me" />
+  </ScreenLayout>
+</Layout>

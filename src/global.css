@@ -1,14 +1,17 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 @theme {
-  --color-background: hsl(0, 0%, 0%);
-  --color-text: hsl(0, 0%, 100%);
+  --color-background: oklch(0 0 0);
+  --color-text: oklch(1 0 0);
   --height-screen-dvh: 100svh;
+  --font-text: "SF Pro", "sans-serif";
+  --font-display: "SF Pro Display", "sans-serif";
 }
 
 html {
   background-color: var(--color-background);
-  font-family: "Almarai", sans-serif;
+  font-family: var(--font-text);
 }
 
 * {
