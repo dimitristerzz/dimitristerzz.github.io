@@ -2,8 +2,8 @@
 @import "./fonts.css";
 
 @theme {
-  --color-background: oklch(0 0 0);
-  --color-text: oklch(1 0 0);
+  --color-background: oklch(0% 0 0);
+  --color-text: oklch(100% 0 0);
   --height-screen-dvh: 100svh;
   --font-text: "SF Pro", "sans-serif";
   --font-display: "SF Pro Display", "sans-serif";
