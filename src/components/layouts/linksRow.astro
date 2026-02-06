@@ -1,6 +1,8 @@
 ---
-import Arrow from "../assets/arrow.astro";
-
+import Projects from "../assets/projects.astro";
+import About from "../assets/about.astro";
+import Contact from "../assets/contact.astro";
+import Skills from "../assets/skills.astro";
 const { lang } = Astro.props;
 
 const labels = {
@@ -24,28 +26,28 @@ const labels = {
     class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
     href={`/${lang}/skills/`}
   >
-    <Arrow />
+    <Skills class="size-5"/>
     {labels[lang].skills}
   </a>
   <a
     class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
     href={`/${lang}/projects/`}
   >
-    <Arrow />
+    <Projects class="size-5"/>
     {labels[lang].projects}
   </a>
   <a
     class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
     href={`/${lang}/about_me/`}
   >
-    <Arrow />
+    <About class="size-5"/>
     {labels[lang].about}
   </a>
   <a
     class="flex flex-row items-center gap-2 text-lg transition-transform duration-200 transform hover:scale-105 hover:text-text/80"
     href={`/${lang}/contact/`}
   >
-    <Arrow />
+    <Contact class="size-5"/>
     {labels[lang].contact}
   </a>
 </div>
