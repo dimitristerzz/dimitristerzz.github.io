@@ -4,7 +4,7 @@
   --color-background: oklch(0% 0 0);
   --color-text: oklch(100% 0 0);
   --height-screen-dvh: 100svh;
-  --font-text: "Tahoma", "sans-serif";
+  --font-text: "Roboto", "sans-serif";
 }
 
 html {
